@@ -1,0 +1,415 @@
+{
+	"info": {
+		"_postman_id": "38ea6c7d-652c-4656-8158-48703f74a4a3",
+		"name": "bacarotruck",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19054078"
+	},
+	"item": [
+		{
+			"name": "update password",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0dSI6ImJmZDBiNmUzLTY3ZWItNGU1Yy04M2MyLTY0Nzg2ZTZkYmZiNCIsInIiOiJDVVNUT01FUiIsImlhdCI6MTcxNTUwNzc0OSwiZXhwIjoxNzE1NTk0MTQ5fQ.z6fA-qLFS43Trwb3QU-WfFOfKB8Up67ZhKnf0KpTQ80",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"newPassword\": \"password4\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/changepassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"changepassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset password by sadmin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0dSI6IjQ1OTIxN2JkLWE2MTgtNDUxYi04YWI4LWQwZTY2N2NhMzgzMiIsInIiOiJBRE1JTiIsImlhdCI6MTcxNTYyMjkxNywiZXhwIjoxNzE1NzA5MzE3fQ.-hX4-nRhZbQDTSjEXQBvsferB3O1eu6U31A80nqlhmk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"uuid\": \"acf08a85-7e1b-44e1-8a2c-a6e970e6052b\",\n    \"newPassword\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://51.77.140.164:3000/api/user/admin/resetpassword",
+					"protocol": "http",
+					"host": [
+						"51",
+						"77",
+						"140",
+						"164"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"admin",
+						"resetpassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create calendar Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{tokenAdmin}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"truck_code\": \"TRUCK_1\",\n        \"day_code\": \"MON\",\n        \"site_code\": \"SITE_1\"\n    },\n    {\n        \"truck_code\": \"TRUCK_1\",\n        \"day_code\": \"TUE\",\n        \"site_code\": \"SITE_2\"\n    },\n    {\n        \"truck_code\": \"TRUCK_1\",\n        \"day_code\": \"WED\",\n        \"site_code\": \"SITE_3\"\n    },\n    {\n        \"truck_code\": \"TRUCK_1\",\n        \"day_code\": \"THU\",\n        \"site_code\": \"SITE_4\"\n    },\n    {\n        \"truck_code\": \"TRUCK_1\",\n        \"day_code\": \"FRI\",\n        \"site_code\": \"SITE_5\"\n    },\n    {\n        \"truck_code\": \"TRUCK_1\",\n        \"day_code\": \"SAT\",\n        \"site_code\": \"SITE_6\"\n    },\n    {\n        \"truck_code\": \"TRUCK_1\",\n        \"day_code\": \"SUN\",\n        \"site_code\": \"SITE_7\"\n    },\n    {\n        \"truck_code\": \"TRUCK_2\",\n        \"day_code\": \"MON\",\n        \"site_code\": \"SITE_7\"\n    },\n    {\n        \"truck_code\": \"TRUCK_2\",\n        \"day_code\": \"TUE\",\n        \"site_code\": \"SITE_6\"\n    },\n    {\n        \"truck_code\": \"TRUCK_2\",\n        \"day_code\": \"WED\",\n        \"site_code\": \"SITE_5\"\n    },\n    {\n        \"truck_code\": \"TRUCK_2\",\n        \"day_code\": \"THU\",\n        \"site_code\": \"SITE_3\"\n    },\n    {\n        \"truck_code\": \"TRUCK_2\",\n        \"day_code\": \"FRI\",\n        \"site_code\": \"SITE_4\"\n    },\n    {\n        \"truck_code\": \"TRUCK_2\",\n        \"day_code\": \"SAT\",\n        \"site_code\": \"SITE_2\"\n    },\n    {\n        \"truck_code\": \"TRUCK_2\",\n        \"day_code\": \"SUN\",\n        \"site_code\": \"SITE_1\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/calendar/create",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"calendar",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login admin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var token = pm.response.json().access_token;\r",
+							"\r",
+							"pm.environment.set(\"tokenAdmin\", token);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"admin@bacaro.it\",\n    \"password\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var token = pm.response.json().access_token;\r",
+							"\r",
+							"pm.environment.set(\"token\", token);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"pino@gmail.com\",\n    \"password\": \"password4\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find all",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{tokenAdmin}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/admin/orders",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find all category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0dSI6IjhiYTM1M2I4LTIzMGYtNGEwNS1hYWU0LTdiNDg5ZjgyY2E2MCIsInIiOiJBRE1JTiIsImlhdCI6MTcxNjA0NTU3NSwiZXhwIjoxNzE2MTMxOTc1fQ.fkGtOlbJExs-_TBm8U1-akztKmjAkbVuWDnPoUcZ0mc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://51.77.140.164:3000/api/categories",
+					"protocol": "http",
+					"host": [
+						"51",
+						"77",
+						"140",
+						"164"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0dSI6IjhiYTM1M2I4LTIzMGYtNGEwNS1hYWU0LTdiNDg5ZjgyY2E2MCIsInIiOiJBRE1JTiIsImlhdCI6MTcxNjA0NTU3NSwiZXhwIjoxNzE2MTMxOTc1fQ.fkGtOlbJExs-_TBm8U1-akztKmjAkbVuWDnPoUcZ0mc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/admin/delete-all-orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"delete-all-orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"truck1@bacarotruck.it\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registration admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"admin@bacaro.it\",\r\n    \"password\": \"password\",\r\n    \"telephone\": \"3332221212\",\r\n    \"name\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registration truck1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"truck1@bacarotruck.it\",\r\n    \"password\": \"password\",\r\n    \"telephone\": \"3332221212\",\r\n    \"name\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registration truck2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"truck2@bacarotruck.it\",\r\n    \"password\": \"password\",\r\n    \"telephone\": \"3332221212\",\r\n    \"name\": \"truck2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

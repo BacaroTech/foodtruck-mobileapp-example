@@ -1,0 +1,55 @@
+version: "2.1"
+services:
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:22.0.1
+    command: start-dev
+    environment:
+      KC_DB: postgres
+      KC_DB_URL_HOST: postgresdb    #url host defiend line 24
+      KC_DB_URL_DATABASE: postgres  #defined db line 31
+      KC_DB_USERNAME: postgres      #defined line 29
+      KC_DB_PASSWORD: password      #defined line 30
+      KC_DB_SCHEMA: public
+      KC_DB_URL_PORT: "5435"
+      # try to create the super admin using wizard instead of the creating it using docker
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: password
+    ports:
+      - "8090:8080"
+    depends_on:
+      - postgresdb
+    networks:
+      - back
+    volumes:
+      - ./my-theme/:/opt/keycloak/themes/my-theme/
+
+  postgresdb:
+    image: postgres:15.2-alpine
+    ports:
+      - "5435:5435"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    networks:
+      - back
+    command: -p 5435
+    volumes:
+      - app-volume:/var/lib/postgresql/data
+
+  pgadmin:
+    image: "dpage/pgadmin4:6.20"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "user@domain.com"
+      PGADMIN_DEFAULT_PASSWORD: "admin"
+    ports:
+      - "5050:80"
+    networks:
+      - back
+
+networks:
+  back:
+    driver: bridge
+    
+volumes:
+  app-volume: #

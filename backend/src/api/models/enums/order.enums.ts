@@ -1,0 +1,11 @@
+export enum STATE_ORDER_TYPE {
+    CART = "CART",
+    SEND = "SEND",
+    ACCEPTED = "ACCEPTED",
+    TRADE = "TRADE",
+    REJECT = "REJECT",
+    PICKEDUP = "PICKEDUP"
+}
+
+
+export type TRADE_ORDER_TYPE  = "CONFRIM" | "DENIED" | "RUNNING" | "PICKEDUP";

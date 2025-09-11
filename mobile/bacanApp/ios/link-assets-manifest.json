@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/IrishGrover-Regular.ttf",
+      "sha1": "1a134a1449a38ec302cf456f1223f2523d72c55c"
+    },
+    {
+      "path": "assets/fonts/LICENSE.txt",
+      "sha1": "2b8b815229aa8a61e483fb4ba0588b8b6c491890"
+    }
+  ]
+}

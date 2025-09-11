@@ -1,0 +1,72 @@
+[
+    {
+        "truck_code": "TRUCK_1",
+        "day_code": "MON",
+        "site_code": "SITE_1"
+    },
+    {
+        "truck_code": "TRUCK_1",
+        "day_code": "TUE",
+        "site_code": "SITE_2"
+    },
+    {
+        "truck_code": "TRUCK_1",
+        "day_code": "WED",
+        "site_code": "SITE_3"
+    },
+    {
+        "truck_code": "TRUCK_1",
+        "day_code": "THU",
+        "site_code": "SITE_4"
+    },
+    {
+        "truck_code": "TRUCK_1",
+        "day_code": "FRI",
+        "site_code": "SITE_5"
+    },
+    {
+        "truck_code": "TRUCK_1",
+        "day_code": "SAT",
+        "site_code": "SITE_6"
+    },
+    {
+        "truck_code": "TRUCK_1",
+        "day_code": "SUN",
+        "site_code": "SITE_7"
+    },
+    {
+        "truck_code": "TRUCK_2",
+        "day_code": "MON",
+        "site_code": "SITE_7"
+    },
+    {
+        "truck_code": "TRUCK_2",
+        "day_code": "TUE",
+        "site_code": "SITE_6"
+    },
+    {
+        "truck_code": "TRUCK_2",
+        "day_code": "WED",
+        "site_code": "SITE_5"
+    },
+    {
+        "truck_code": "TRUCK_2",
+        "day_code": "THU",
+        "site_code": "SITE_3"
+    },
+    {
+        "truck_code": "TRUCK_2",
+        "day_code": "FRI",
+        "site_code": "SITE_4"
+    },
+    {
+        "truck_code": "TRUCK_2",
+        "day_code": "SAT",
+        "site_code": "SITE_2"
+    },
+    {
+        "truck_code": "TRUCK_2",
+        "day_code": "SUN",
+        "site_code": "SITE_1"
+    }
+]

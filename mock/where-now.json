@@ -1,0 +1,22 @@
+[
+    {
+        "siteCode": "SITE_1",
+        "siteName": "Camposampiero",
+        "truckCode": "TRUCK_1",
+        "truckName": "Taco Magico",
+        "startAt": "19:00:00",
+        "endAt": "20:00:00",
+        "dayOfWeek": 0,
+        "nameOfDay": "sunday"
+    },
+    {
+        "siteCode": "SITE_2",
+        "siteName": "San Vito di Altivole",
+        "truckCode": "TRUCK_2",
+        "truckName": "Nacho Volante",
+        "startAt": "12:00:00",
+        "endAt": "14:00:00",
+        "dayOfWeek": 0,
+        "nameOfDay": "SAGRA Camposampiero"
+    }
+]

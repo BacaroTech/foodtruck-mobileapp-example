@@ -1,0 +1,23 @@
+version: "2.1"
+services:
+
+  postgresdb:
+    image: postgres:15.2-alpine
+    ports:
+      - "5436:5436"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    networks:
+      - back
+    command: -p 5436
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - app-volume-develop:/var/lib/postgresql/data
+
+networks:
+  back:
+    driver: bridge
+    
+volumes:
+  app-volume-develop: #
