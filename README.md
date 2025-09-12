@@ -1,65 +1,111 @@
 # BacarotruckMobileApp
-Mobile App for Bacarotruck
 
-# Mobile
-App mobile in react-native [react-native](https://reactnative.dev/)
+**BacarotruckMobileApp [ITA]:**
+BacarotruckMobileApp è un’app mobile sviluppata in React Native con backend Node.js e database PostgreSQL. L’app consente la gestione di utenti, ruoli (TRUCK e ADMIN) e la creazione di calendari tramite API.
 
-## Passi da seguire per avvio app
-1. entrare nella cartella bacarotruckMobile
-```
-cd mobile/bacarotruckApp
-```
-2. avviare l'app 
+**BacarotruckMobileApp [ENG]:**
+BacarotruckMobileApp is a mobile app built with React Native, featuring a Node.js backend and PostgreSQL database. It enables user management, role configuration (TRUCK and ADMIN), and calendar creation via API.
 
-per android:
-```
-npm run android
-```
-per ios: 
-- ```npm run ios -- --simulator="iPhone SE (3rd generation)"```
-- ```npm run ios -- --simulator="iPhone 15"```
 
-## Prima installazione app
-installare le dipendenze
+
+## 📱 Mobile App
+
+Cartella: `mobile/bacarotruckApp`
+
+[react-native](https://reactnative.dev/)
+
+### Avvio app
+
+1. Entrare nella cartella dell’app:
+```bash
+   cd mobile/bacarotruckApp
+````
+
+2. Avviare l’app:
+
+* **Android**
+
+```bash
+  npm run android
 ```
+
+* **iOS** (scegliere il simulatore)
+
+```bash
+  npm run ios -- --simulator="iPhone SE (3rd generation)"
+  npm run ios -- --simulator="iPhone 15"
+```
+
+### Prima installazione
+
+Installare le dipendenze:
+
+```bash
 npm install
 ```
 
-# Backend
-Backend node [node](https://nodejs.org/en)
+---
 
-## Passi da seguire per avvio
+## 🔧 Backend
 
-1. entrare nella cartella backend
-```
+Cartella: `backend`
+Sviluppato in **Node.js** con database **PostgreSQL**.
+
+### Avvio backend
+
+1. Entrare nella cartella backend:
+
+```bash
 cd backend
 ```
 
-2. database
+2. Avviare il database:
 
-avvio docker compose
-```
-docker compose -f "backend\docker-compose.yml" up -d --build 
+* Con **Docker Compose**:
+
+```bash
+docker compose -f "backend/docker-compose.yml" up -d --build
 ```
 
-o installare il database postgres e avviare lo script init.sql
+* Oppure installare PostgreSQL manualmente ed eseguire lo script:
 
-3. avvio del backend
+```bash
+psql -f init.sql
 ```
+
+3. Avviare il server backend:
+
+```bash
 npm start
 ```
-## Prima installazione
-installare le dipendenze
-```
+
+### Prima installazione
+
+1. Installare le dipendenze:
+
+```bash
 npm install
 ```
-configurare il file di env (copiando dal .env.development di esempio)
-```
+
+2. Configurare il file `.env` copiandolo da quello di esempio:
+
+```bash
 cp .env.development .env
 ```
 
-avviare docker compose o il database postgres e avviare lo script init.sql. Registrare 3 utenti da app o da api e configurare a mano i ruoli TRUCK e ADMIN.
-Con il token dell'utente ADMIN generare il calendario con l'api 
-```
+3. Avviare il database come indicato sopra e inizializzare i dati:
+
+   * Registrare **3 utenti** (da app o da API).
+   * Assegnare manualmente i ruoli `TRUCK` e `ADMIN`.
+   * Con il token dell’utente `ADMIN`, creare il calendario:
+
+```bash
 POST /api/calendar/create
 ```
+
+## Link and Social
+- 🌳 [Link Tree Homemade](https://bacarotech.github.io/)
+- 📷 [Instagram](https://www.instagram.com/bacarotechofficial/)
+- 🎵 [TikTok](https://www.tiktok.com/@bacarotech)
+- 🎥 [Youtube](https://www.youtube.com/@Bacarotech)
+- 📫 Email: **bacarotech@gmail.com**
