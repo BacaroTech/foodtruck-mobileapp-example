@@ -123,13 +123,6 @@ cp .env.development .env
 POST /api/calendar/create
 ```
 
-## 📬 Contatti
-- 🌳 [Link Tree Homemade](https://bacarotech.github.io/)
-- 📷 [Instagram](https://www.instagram.com/bacarotechofficial/)
-- 🎵 [TikTok](https://www.tiktok.com/@bacarotech)
-- 🎥 [Youtube](https://www.youtube.com/@Bacarotech)
-- 📫 Email: **bacarotech@gmail.com**
-
 ## 🤝 Contributi
 
 Se vuoi contribuire al progetto, sentiti libero di aprire una issue o inviare una pull request.
@@ -285,14 +278,13 @@ cp .env.development .env
 POST /api/calendar/create
 ```
 
-## 📬 Contacts
-
-  * 🌳 [Link Tree Homemade](https://bacarotech.github.io/)
-  * 📷 [Instagram](https://www.instagram.com/bacarotechofficial/)
-  * 🎵 [TikTok](https://www.tiktok.com/@bacarotech)
-  * 🎥 [Youtube](https://www.youtube.com/@Bacarotech)
-  * 📫 Email: **bacarotech@gmail.com**
+## Social e Contatti
+Se hai dei consigli facci sapere!
+- 🌳 [Linkedin](https://www.linkedin.com/company/bacarotech)
+- 📷 [Instagram](https://www.instagram.com/bacarotechofficial/)
+- 🎵 [TikTok](https://www.tiktok.com/@bacarotech)
+- 🎥 [Youtube](https://www.youtube.com/@Bacarotech)
+- 📫 Email: **bacarotech@gmail.com**
 
 ## 🤝 Contributions
-
 If you'd like to contribute to the project, feel free to open an issue or submit a pull request.
